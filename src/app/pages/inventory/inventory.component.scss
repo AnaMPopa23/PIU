@@ -1,0 +1,47 @@
+.item {
+    //justify-content:center;
+    //align-items: center;
+    background-color: #fee6e3;
+    padding: 10px;
+    border-radius: 15px;
+    width: 150px;
+    height: 170px;
+    margin: 15px;
+    justify-content: center;
+    border-color:crimson ;
+    border:5px;
+}
+.items{
+    color:crimson;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top:10px ;
+}
+.item p {
+    margin:8px;
+} 
+button{
+    margin:5px;
+}
+
+.Delete {
+    color:crimson;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top:10px ;
+    border-color: black;
+    border-radius: 10px;
+    background-color: rgb(234, 147, 164);
+}
+.Edit {
+    color:crimson;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top:10px ;
+    border-color: black;
+    border-radius: 10px;
+    background-color: rgb(234, 147, 164);
+}
