@@ -44,10 +44,17 @@ export class InventoryComponent implements OnInit{
     })
   }
 
-  async openDialog() {
+Delete(id:number): void {
+  this.itemService.deleteItem(id).subscribe(() => {
+    window.location.reload(); //refresh
+  }, (err) => {
+      this.error = err.message;
+  })
+  }
+  async openDialog( id : number) {
     const dialogRef = this.dialog.open(FormComponent, {
       width: '250px',
-      data: {item : this.items}
+      data: {itemid : id}
     });
 
     dialogRef.afterClosed().subscribe(() => {

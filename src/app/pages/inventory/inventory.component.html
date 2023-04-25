@@ -1,11 +1,11 @@
 <div class="items">
     <h1>Inventory</h1>
-    <button mat-raised-button class="add__item" (click)="openDialog()">Add Item<mat-icon>library_add</mat-icon></button>
-    <div *ngFor="let item of items" class="item">
-        <p>Nume: {{item}}</p>
-        <p>Descriere: {{item}}</p>
-        <p>Cantitate: {{item}}</p>
-        <button class="Delete">delete</button>
-        <button class="Edit">edit</button>
+    <button mat-raised-button class="add__item" (click)="openDialog(0)">Add Item<mat-icon>library_add</mat-icon></button>
+    <div *ngFor="let item of itemList" class="item">
+        <p>Nume: {{item.name}}</p>
+        <p>Descriere: {{item.number}}</p>
+        <p>Cantitate: {{item.category}}</p>
+        <button class="Delete" class="add__item" (click)="Delete(item.id)">Delete</button>
+        <button class="Edit" class="add__item" (click)="openDialog(item.id)">Edit</button>
     </div>
 </div>

@@ -8,6 +8,7 @@ import { Item } from 'src/models/item';
 })
 export class ItemService {
 
+
   readonly baseURL = 'http://localhost:44358/api/item/'
   constructor(public httpClient: HttpClient) { }
 
